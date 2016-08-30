@@ -13,11 +13,11 @@ public class MainApp extends Application<MainConf>{
     //define application entry point
     public static void main(String[] args) throws  Exception{
         new MainApp().run(args);
+
     }
 
     @Override
     public void initialize(Bootstrap<MainConf> bootstrap) {
-
         super.initialize(bootstrap);
     }
 
@@ -28,6 +28,7 @@ public class MainApp extends Application<MainConf>{
 
     @Override
     public void run(MainConf mainConf, Environment environment) throws Exception {
+        System.out.println("Call run of mainApp");
         final MainResource mainResource = new MainResource();
         environment.jersey().register(mainResource);
 
