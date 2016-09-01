@@ -1,4 +1,4 @@
-package com.indra.testCard;
+package com.indra.practice;
 
 import io.dropwizard.Configuration;
 

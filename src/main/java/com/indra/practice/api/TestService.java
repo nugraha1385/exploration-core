@@ -1,4 +1,4 @@
-package com.indra.testCard;
+package com.indra.practice.api;
 
 import com.google.common.base.Optional;
 
@@ -15,9 +15,9 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/test")
 @Produces(MediaType.APPLICATION_JSON)
-public class MainResource {
+public class TestService {
 
-    public MainResource(){
+    public TestService(){
 
     }
 

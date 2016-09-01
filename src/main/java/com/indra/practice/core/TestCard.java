@@ -1,4 +1,4 @@
-package com.indra.testCard.model;
+package com.indra.practice.core;
 
 import java.util.List;
 

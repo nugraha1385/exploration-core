@@ -1,4 +1,4 @@
-package com.indra.testCard.model;
+package com.indra.practice.core;
 
 /**
  * Created by Indrap on 8/26/2016.

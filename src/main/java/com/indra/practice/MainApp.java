@@ -1,6 +1,8 @@
-package com.indra.testCard;
+package com.indra.practice;
 
 
+import com.indra.practice.api.TestService;
+import com.indra.practice.health.DatabaseHealthCheck;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -29,8 +31,11 @@ public class MainApp extends Application<MainConf>{
     @Override
     public void run(MainConf mainConf, Environment environment) throws Exception {
         System.out.println("Call run of mainApp");
-        final MainResource mainResource = new MainResource();
-        environment.jersey().register(mainResource);
+        final TestService testService = new TestService();
+        //app api
+        environment.jersey().register(testService);
 
+        //app healthcheck
+        environment.healthChecks().register("database",new DatabaseHealthCheck());
     }
 }
