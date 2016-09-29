@@ -1,4 +1,4 @@
-package com.indra.practice.core;
+package com.indra.practice.core.model;
 
 /**
  * Created by Indrap on 8/26/2016.

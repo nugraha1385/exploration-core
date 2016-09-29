@@ -1,4 +1,4 @@
-package com.indra.practice.core;
+package com.indra.practice.core.model;
 
 import java.util.List;
 

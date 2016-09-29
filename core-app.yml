@@ -1,2 +1,9 @@
-template: Hello, %s!
-defaultName: Stranger
+database:
+# the name of your JDBC driver
+  driverClass:org.mariadb.jdbc.Driver
+  # the username
+  user:root
+  # the password
+  password:password
+  # the JDBC URL
+  url:jdbc:mariadb://localhost:3306/test_card
